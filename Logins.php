@@ -34,11 +34,11 @@ else{
 <?php
 	require("Model/DataHandler.php");
 	   $handler = new DataHandler();
-	   $handler->autoCreateDatabase();    
+       //$handler->autoCreateDatabase();    
 	   $handler->createDBConnection();  
-	   $handler->createTableHealthCareUsers();
+	 /* $handler->createTableHealthCareUsers();
        $handler->createTablePatients();
-       $handler->createTableHealthRecord();
+       $handler->createTableHealthRecord();*/
 	?>
 
     <div class="container">

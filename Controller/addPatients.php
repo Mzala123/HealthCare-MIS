@@ -1,11 +1,12 @@
 <?php
 session_start();
 if(isset($_SESSION['username'])){
-    require_once("../Model/Patient.php");
     require_once("../Model/DataHandler.php"); 
-
+    require_once("../Model/Patient.php");
+   
     $handler = new DataHandler();
     $handler->createDBConnection();
+
     $patient = new Patient();
     
     if (isset($_GET['currentState'])) {

@@ -1,31 +1,4 @@
-<?php
-
-require "Constants.php";
-class DataHandler {
-   
-    
-    public $conn;
-    public $statement;
-            
-
-   public function DataHandler(){
-          
-   }
-
-
-
-   public function createDBConnection(){
-    $this->conn = new mysqli(DBlink, Username,Password, DBname);
-       
-    if($this->conn->connect_error){
-        return false;
-    }
-    return true;
-   }
-
-
-
-  /* public function autoCreateDatabase(){
+public function autoCreateDatabase(){
           $this->conn = new mysqli(DBlink, Username, Password);
 
           if($this->conn->connect_error){
@@ -88,6 +61,7 @@ class DataHandler {
         height DOUBLE NOT NULL,
         temp_reading DOUBLE NOT NULL,
         code VARCHAR(15) NOT NULL,
+        code_desc TEXT NOT NULL,
         visit_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
         username VARCHAR(40) NOT NULL
        )";
@@ -99,29 +73,4 @@ class DataHandler {
           //  echo"an error occured while creating a table " .$this->conn->error;
        }
    }
-   */
-
-   public function executeAction($query){
-       $result = $this->conn->query($query);
-       if($result){
-           throw new Exception("Failed to execute query");
-       }
-       return true;
-       
-   }
    
-   public function getDataQuery($query){
-       $result = $this->conn->query($query);
-       if(!$result){
-           throw new Exception("Could not get data");
-       }
-       else
-           return $result;
-   }
-    
-  public function clearDB() {
-      $this->conn->close();
-  }
-  
-
-}
