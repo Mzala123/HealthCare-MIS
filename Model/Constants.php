@@ -1,6 +1,6 @@
 <?php
 
-   define("DBlink","localhost:3307");
+   define("DBlink","localhost");
    define ("Username", "root");
    define ("Password","");
    define ("DBname","HealthCareDB");
