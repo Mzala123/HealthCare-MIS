@@ -209,7 +209,7 @@ if(isset($_SESSION['username_Mzala'])){
                                         <div class="col-md-6 mb-3">
                                             <label>Weight(Kgs)</label>
                                             <input type="text" class="form-control" id="weight" name="weight"
-                                            onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"
+                                            
                                              placeholder="weight">
                                          
                                         </div>
@@ -217,7 +217,7 @@ if(isset($_SESSION['username_Mzala'])){
                                         <div class="col-md-6 mb-3">
                                             <label>Height(Meters)</label>
                                             <input type="text" class="form-control" id="height" name="height"
-                                            onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"
+                                          
                                              placeholder="height" >
                                                    
                                         </div>
@@ -230,7 +230,7 @@ if(isset($_SESSION['username_Mzala'])){
                                         <div class="col-md-6 mb-3">
                                             <label>Temparature reading</label>
                                             <input type="text" class="form-control" id="temperature" name="temperature" 
-                                            onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"
+                                          
                                             placeholder="Temperature" >
                                             
                                         </div>
