@@ -62,7 +62,7 @@ else{
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="LoginWith" aria-describedby="emailHelp"
-                                                placeholder="Enter Username or Email Address " name="LoginWith">
+                                                placeholder="Enter Username" name="LoginWith">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
