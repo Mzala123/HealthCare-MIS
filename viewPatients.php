@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
-    $username = $_SESSION['username'];
+if(isset($_SESSION['username_Mzala'])){
+    $username = $_SESSION['username_Mzala'];
     echo "this is your username $username";
 
     require("Model/DataHandler.php");
@@ -300,7 +300,7 @@ if(isset($_SESSION['username'])){
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Patients Record</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Patient Record(s)</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

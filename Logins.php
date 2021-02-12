@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
+if(isset($_SESSION['username_Mzala'])){
     header("location:index.php");
 }
 else{
@@ -80,9 +80,7 @@ else{
                                        </button>
                                     </form>
                                     <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                    </div>
+                                    
                                     <div class="text-center">
                                      Dont have an Account? <a class="small" href="Registers.php">Sign Up</a>
                                     </div>

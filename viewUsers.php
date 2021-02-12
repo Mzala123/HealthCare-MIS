@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
-    $username = $_SESSION['username'];
+if(isset($_SESSION['username_Mzala'])){
+    $username = $_SESSION['username_Mzala'];
     echo "this is your username $username";
 
     require("Model/DataHandler.php");

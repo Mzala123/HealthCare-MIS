@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
+if(isset($_SESSION['username_Mzala'])){
     require_once("../Model/DataHandler.php"); 
     require_once("../Model/Patient.php");
    
@@ -74,7 +74,7 @@ function addHealthRecordData($handler, $patient){
     if(isset($_POST["weight"]) && isset($_POST["height"]) && isset($_POST["temperature"]) &&
     isset($_POST["diagnosis"]) && isset($_POST["patient_id"]) )
     {
-        $username = $_SESSION['username'];
+        $username = $_SESSION['username_Mzala'];
           
         $weight = stripslashes($_POST["weight"]);
         $weight = mysqli_real_escape_string($handler->conn, $weight);

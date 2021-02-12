@@ -2,7 +2,7 @@
 session_start();
 
 
-if(!isset($_SESSION['Username'])){
+if(!isset($_SESSION['username_Mzala'])){
     require_once("../Model/User.php");
     require_once("../Model/DataHandler.php"); 
     $handler = new DataHandler();

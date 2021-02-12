@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['username_Mzala'])) {
     header('location:/Index.php');
 }
 else{
@@ -29,7 +29,7 @@ else{
                 $row = mysqli_fetch_assoc($result); //Fetching user data, no need for loop since its one row
                 /* Assigning user session  values to be used in different pages */
                 $_SESSION['id'] = $row['Id'];
-                $_SESSION['username'] = $row['Username'];
+                $_SESSION['username_Mzala'] = $row['Username'];
     
                 //Return success status code 200 to login javascript file
                 echo json_encode(array("statusCode" => 200));

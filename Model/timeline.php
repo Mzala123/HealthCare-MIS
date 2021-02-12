@@ -62,7 +62,7 @@
                             <div class="card-body">
                                 <?php echo $row['code_desc'];?>
                             </div>
-                            <a class="btn btn-primary" href="https://www.icd10data.com/ICD10CM/Codes/<?php $row['code']?>" target="blank">More diagnosis details</a>
+                            <a class="btn btn-primary" href="https://www.icd10data.com/ICD10CM/Codes/<?php echo $row['code']?>" target="blank">More diagnosis details</a>
                         </div>
                   </li>
             <?php
